@@ -9,7 +9,7 @@ export const galleryData: GalleryItem[] = [
   {
     id: 1,
     title: "Restaurant interior with natural lighting",
-    image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/hd6kliVe-bu8TPWU0SXoTg/o.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     category: "restaurant"
   },
   {

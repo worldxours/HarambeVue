@@ -35,7 +35,7 @@ export default function Home() {
             
             <div className="order-1 lg:order-2 relative">
               <img 
-                src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/mZYxAdGPwQsdHnD5Gi7HYg/o.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
                 alt="Beautifully plated healthy dish" 
                 className="rounded-lg shadow-xl w-full h-[400px] md:h-[500px] object-cover object-center"
               />

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Leaf, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import harambeLogoPath from "@/assets/harambe-logo-transparent.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -34,8 +35,8 @@ export default function Header() {
       <div className="container mx-auto py-4">
         <nav className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Leaf className="h-6 w-6 text-primary" />
-            <span className="font-heading font-bold text-xl md:text-2xl text-primary">Verdant Table</span>
+            <img src={harambeLogoPath} alt="Harambe Logo" className="h-10 w-auto" />
+            <span className="font-heading font-bold text-xl md:text-2xl text-primary">Harambe</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -70,8 +71,8 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex justify-between items-center mb-8">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                      <Leaf className="h-6 w-6 text-primary" />
-                      <span className="font-heading font-bold text-xl text-primary">Verdant Table</span>
+                      <img src={harambeLogoPath} alt="Harambe Logo" className="h-8 w-auto" />
+                      <span className="font-heading font-bold text-xl text-primary">Harambe</span>
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                       <X className="h-5 w-5" />

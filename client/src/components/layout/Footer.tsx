@@ -1,7 +1,8 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Leaf, Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from "lucide-react";
+import harambeLogoPath from "@/assets/harambe-logo-transparent.png";
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Leaf className="h-6 w-6 text-[hsl(44,100%,52%)]" />
-              <span className="font-heading font-bold text-xl">Verdant Table</span>
+              <img src={harambeLogoPath} alt="Harambe Logo" className="h-8 w-auto" />
+              <span className="font-heading font-bold text-xl">Harambe</span>
             </Link>
-            <p className="text-gray-300 mb-6">Farm-to-table dining celebrating the best of local and seasonal ingredients.</p>
+            <p className="text-gray-300 mb-6">Authentic Ethiopian cuisine featuring traditional spices and family recipes.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-[hsl(44,100%,52%)] transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -61,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 shrink-0" />
-                <span className="text-gray-300">info@verdanttable.com</span>
+                <span className="text-gray-300">info@harambeethiopian.com</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 mt-1 shrink-0" />
@@ -90,7 +91,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Verdant Table. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Harambe Ethiopian Restaurant. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 text-sm hover:text-[hsl(44,100%,52%)] transition-colors">Privacy Policy</a>
             <a href="#" className="text-gray-400 text-sm hover:text-[hsl(44,100%,52%)] transition-colors">Terms of Service</a>
