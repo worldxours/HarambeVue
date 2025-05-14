@@ -24,11 +24,11 @@ export default function Home() {
               <div className="flex items-center mt-10 space-x-6">
                 <div className="flex items-center">
                   <Clock className="text-[hsl(44,100%,52%)] mr-2 h-5 w-5" />
-                  <span>Open 11am - 10pm</span>
+                  <span>Open 12pm - 10pm</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="text-[hsl(44,100%,52%)] mr-2 h-5 w-5" />
-                  <span>123 Green Street</span>
+                  <span>2149 Commercial Dr</span>
                 </div>
               </div>
             </div>
@@ -49,20 +49,20 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Leaf className="text-primary h-8 w-8 mb-4" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Farm Fresh</h3>
-              <p className="text-[#757575]">We partner with local farms to bring you the freshest seasonal ingredients.</p>
+              <h3 className="font-heading text-xl font-semibold mb-3">Authentic Ethiopian Cuisine</h3>
+              <p className="text-[#757575]">We are proud to serve dishes rooted in centuries-old traditions, passed down through generations. From the rich, spicy stews, delicious veggie dishes to the unique flavours of injera, every bite tells a story of culture, community, and heritage. Whether you're new to Ethiopian food or a longtime lover, you'll find flavors here that are both comforting and unforgettable.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Utensils className="text-primary h-8 w-8 mb-4" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Chef Crafted</h3>
-              <p className="text-[#757575]">Our skilled chefs transform simple ingredients into extraordinary dishes.</p>
+              <h3 className="font-heading text-xl font-semibold mb-3">Fresh Ingredients, Bold Flavors</h3>
+              <p className="text-[#757575]">We believe great food starts with great ingredients. That's why we source the freshest produce, imported spices, and high-quality meats to prepare every dish. Our kitchen is committed to cooking from scratch daily, ensuring that every plate is vibrant, nourishing, and full of life. You'll taste the difference in every bite — fresh, flavorful, and made with care.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Wine className="text-primary h-8 w-8 mb-4" />
-              <h3 className="font-heading text-xl font-semibold mb-3">Fine Experience</h3>
-              <p className="text-[#757575]">Enjoy attentive service in our warm, inviting atmosphere.</p>
+              <h3 className="font-heading text-xl font-semibold mb-3">Welcoming Atmosphere</h3>
+              <p className="text-[#757575]">With our warm environment, traditional Ethiopian decor, and the inviting aroma of spices in the air, our space is designed to make you feel like part of the family. Whether you're here for a quiet dinner, a celebration, or a cultural experience, our friendly staff and cozy ambiance create the perfect setting for memorable meals.</p>
             </div>
           </div>
         </div>
