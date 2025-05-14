@@ -10,8 +10,8 @@ export default function Home() {
         <div className="container mx-auto py-12 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">Fresh, Organic & Locally Sourced</h1>
-              <p className="text-lg md:text-xl text-[#757575] mb-8">Experience farm-to-table dining in the heart of the city. Our seasonal menu celebrates local producers and sustainable practices.</p>
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">Fresh food with an authentic experience</h1>
+              <p className="text-lg md:text-xl text-[#757575] mb-8">Experience authentic and delicious Ethiopian dining in the heart of our beautiful city. We've been serving the people of Vancouver delicious meals for 25 years.</p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild className="bg-primary hover:bg-primary/90 text-white px-6 py-6 rounded-md">
                   <Link href="/menu">View Our Menu</Link>
