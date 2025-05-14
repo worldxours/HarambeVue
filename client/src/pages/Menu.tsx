@@ -4,15 +4,15 @@ import { Badge } from "@/components/ui/badge";
 import { menuData } from "@/data/menuData";
 import { Star } from "lucide-react";
 
-type Category = "all" | "starters" | "main-courses" | "desserts" | "drinks";
+type Category = "all" | "appetizers" | "vegetarian" | "beef" | "chicken" | "lamb" | "combination-platters" | "fish" | "injera";
 
 export default function Menu() {
   const [activeCategory, setActiveCategory] = useState<Category>("all");
   
   // Filter menu items based on active category
   const filteredItems = activeCategory === "all" 
-    ? [...menuData.starters, ...menuData.mainCourses, ...menuData.desserts, ...menuData.drinks] 
-    : menuData[activeCategory === "main-courses" ? "mainCourses" : activeCategory as keyof typeof menuData] || [];
+    ? [...menuData.appetizers, ...menuData.vegetarian, ...menuData.beef, ...menuData.chicken, ...menuData.lamb, ...menuData.combinationPlatters, ...menuData.fish, ...menuData.injera] 
+    : menuData[activeCategory === "combination-platters" ? "combinationPlatters" : activeCategory as keyof typeof menuData] || [];
 
   return (
     <section className="py-16 md:py-24 bg-[hsl(44,100%,95%)]">
@@ -34,41 +34,69 @@ export default function Menu() {
             All
           </Button>
           <Button 
-            variant={activeCategory === "starters" ? "default" : "outline"} 
-            onClick={() => setActiveCategory("starters")}
-            className={activeCategory === "starters" ? "bg-primary text-white" : "text-primary border-primary"}
+            variant={activeCategory === "appetizers" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("appetizers")}
+            className={activeCategory === "appetizers" ? "bg-primary text-white" : "text-primary border-primary"}
           >
-            Starters
+            Appetizers
           </Button>
           <Button 
-            variant={activeCategory === "main-courses" ? "default" : "outline"} 
-            onClick={() => setActiveCategory("main-courses")}
-            className={activeCategory === "main-courses" ? "bg-primary text-white" : "text-primary border-primary"}
+            variant={activeCategory === "vegetarian" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("vegetarian")}
+            className={activeCategory === "vegetarian" ? "bg-primary text-white" : "text-primary border-primary"}
           >
-            Main Courses
+            Vegetarian
           </Button>
           <Button 
-            variant={activeCategory === "desserts" ? "default" : "outline"} 
-            onClick={() => setActiveCategory("desserts")}
-            className={activeCategory === "desserts" ? "bg-primary text-white" : "text-primary border-primary"}
+            variant={activeCategory === "beef" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("beef")}
+            className={activeCategory === "beef" ? "bg-primary text-white" : "text-primary border-primary"}
           >
-            Desserts
+            Beef
           </Button>
           <Button 
-            variant={activeCategory === "drinks" ? "default" : "outline"} 
-            onClick={() => setActiveCategory("drinks")}
-            className={activeCategory === "drinks" ? "bg-primary text-white" : "text-primary border-primary"}
+            variant={activeCategory === "chicken" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("chicken")}
+            className={activeCategory === "chicken" ? "bg-primary text-white" : "text-primary border-primary"}
           >
-            Drinks
+            Chicken
+          </Button>
+          <Button 
+            variant={activeCategory === "lamb" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("lamb")}
+            className={activeCategory === "lamb" ? "bg-primary text-white" : "text-primary border-primary"}
+          >
+            Lamb
+          </Button>
+          <Button 
+            variant={activeCategory === "combination-platters" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("combination-platters")}
+            className={activeCategory === "combination-platters" ? "bg-primary text-white" : "text-primary border-primary"}
+          >
+            Combination Platters
+          </Button>
+          <Button 
+            variant={activeCategory === "fish" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("fish")}
+            className={activeCategory === "fish" ? "bg-primary text-white" : "text-primary border-primary"}
+          >
+            Fish
+          </Button>
+          <Button 
+            variant={activeCategory === "injera" ? "default" : "outline"} 
+            onClick={() => setActiveCategory("injera")}
+            className={activeCategory === "injera" ? "bg-primary text-white" : "text-primary border-primary"}
+          >
+            Injera
           </Button>
         </div>
         
-        {/* Starters Section */}
-        {(activeCategory === "all" || activeCategory === "starters") && (
+        {/* Appetizers Section */}
+        {(activeCategory === "all" || activeCategory === "appetizers") && (
           <div className="menu-section mb-16">
-            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Starters</h3>
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Appetizers</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {menuData.starters.map((item) => (
+              {menuData.appetizers && menuData.appetizers.map((item) => (
                 <div key={item.id} className="flex gap-4">
                   <img 
                     src={item.image} 
@@ -93,12 +121,12 @@ export default function Menu() {
           </div>
         )}
         
-        {/* Main Courses Section */}
-        {(activeCategory === "all" || activeCategory === "main-courses") && (
+        {/* Vegetarian Section */}
+        {(activeCategory === "all" || activeCategory === "vegetarian") && (
           <div className="menu-section mb-16">
-            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Main Courses</h3>
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Vegetarian</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {menuData.mainCourses.map((item) => (
+              {menuData.vegetarian && menuData.vegetarian.map((item) => (
                 <div key={item.id} className="flex gap-4">
                   <img 
                     src={item.image} 
@@ -133,12 +161,12 @@ export default function Menu() {
           </div>
         )}
         
-        {/* Desserts Section */}
-        {(activeCategory === "all" || activeCategory === "desserts") && (
+        {/* Beef Section */}
+        {(activeCategory === "all" || activeCategory === "beef") && (
           <div className="menu-section mb-16">
-            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Desserts</h3>
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Beef</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {menuData.desserts.map((item) => (
+              {menuData.beef && menuData.beef.map((item) => (
                 <div key={item.id} className="flex gap-4">
                   <img 
                     src={item.image} 
@@ -163,12 +191,12 @@ export default function Menu() {
           </div>
         )}
         
-        {/* Drinks Section */}
-        {(activeCategory === "all" || activeCategory === "drinks") && (
-          <div className="menu-section">
-            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Drinks</h3>
+        {/* Chicken Section */}
+        {(activeCategory === "all" || activeCategory === "chicken") && (
+          <div className="menu-section mb-16">
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Chicken</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {menuData.drinks.map((item) => (
+              {menuData.chicken && menuData.chicken.map((item) => (
                 <div key={item.id} className="flex gap-4">
                   <img 
                     src={item.image} 
@@ -179,6 +207,133 @@ export default function Menu() {
                     <div className="flex justify-between items-start">
                       <h4 className="font-heading font-medium text-lg">{item.name}</h4>
                       <span className="text-[hsl(0,64%,50%)] font-medium">${item.price}</span>
+                    </div>
+                    <p className="text-[#757575] text-sm mt-1">{item.description}</p>
+                    {item.dietary && (
+                      <Badge variant="secondary" className="mt-2 bg-[hsl(44,100%,52%)]/20 text-[hsl(122,63%,25%)] hover:bg-[hsl(44,100%,52%)]/30">
+                        {item.dietary}
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* Lamb Section */}
+        {(activeCategory === "all" || activeCategory === "lamb") && (
+          <div className="menu-section mb-16">
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Lamb</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {menuData.lamb && menuData.lamb.map((item) => (
+                <div key={item.id} className="flex gap-4">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className="w-24 h-24 rounded-md object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-heading font-medium text-lg">{item.name}</h4>
+                      <span className="text-[hsl(0,64%,50%)] font-medium">${item.price}</span>
+                    </div>
+                    <p className="text-[#757575] text-sm mt-1">{item.description}</p>
+                    {item.dietary && (
+                      <Badge variant="secondary" className="mt-2 bg-[hsl(44,100%,52%)]/20 text-[hsl(122,63%,25%)] hover:bg-[hsl(44,100%,52%)]/30">
+                        {item.dietary}
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* Combination Platters Section */}
+        {(activeCategory === "all" || activeCategory === "combination-platters") && (
+          <div className="menu-section mb-16">
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Combination Platters</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {menuData.combinationPlatters && menuData.combinationPlatters.map((item) => (
+                <div key={item.id} className="flex gap-4">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className="w-24 h-24 rounded-md object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-heading font-medium text-lg">{item.name}</h4>
+                      <span className="text-[hsl(0,64%,50%)] font-medium">
+                        {typeof item.price === 'object' ? 
+                          Object.entries(item.price).map(([key, value], index) => (
+                            <div key={index}>{key}: ${value}</div>
+                          )) : 
+                          `$${item.price}`
+                        }
+                      </span>
+                    </div>
+                    <p className="text-[#757575] text-sm mt-1">{item.description}</p>
+                    {item.dietary && (
+                      <Badge variant="secondary" className="mt-2 bg-[hsl(44,100%,52%)]/20 text-[hsl(122,63%,25%)] hover:bg-[hsl(44,100%,52%)]/30">
+                        {item.dietary}
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* Fish Section */}
+        {(activeCategory === "all" || activeCategory === "fish") && (
+          <div className="menu-section mb-16">
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Fish</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {menuData.fish && menuData.fish.map((item) => (
+                <div key={item.id} className="flex gap-4">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className="w-24 h-24 rounded-md object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-heading font-medium text-lg">{item.name}</h4>
+                      <span className="text-[hsl(0,64%,50%)] font-medium">${item.price}</span>
+                    </div>
+                    <p className="text-[#757575] text-sm mt-1">{item.description}</p>
+                    {item.dietary && (
+                      <Badge variant="secondary" className="mt-2 bg-[hsl(44,100%,52%)]/20 text-[hsl(122,63%,25%)] hover:bg-[hsl(44,100%,52%)]/30">
+                        {item.dietary}
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        
+        {/* Injera Section */}
+        {(activeCategory === "all" || activeCategory === "injera") && (
+          <div className="menu-section mb-16">
+            <h3 className="font-heading text-2xl font-semibold mb-8 text-primary">Injera</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {menuData.injera && menuData.injera.map((item) => (
+                <div key={item.id} className="flex gap-4">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    className="w-24 h-24 rounded-md object-cover"
+                  />
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start">
+                      <h4 className="font-heading font-medium text-lg">{item.name}</h4>
+                      <span className="text-[hsl(0,64%,50%)] font-medium">{item.price ? `$${item.price}` : ''}</span>
                     </div>
                     <p className="text-[#757575] text-sm mt-1">{item.description}</p>
                     {item.dietary && (
