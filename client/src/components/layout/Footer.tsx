@@ -54,21 +54,21 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 mt-1 shrink-0" />
-                <span className="text-gray-300">123 Green Street<br/>Your City, ST 12345</span>
+                <span className="text-gray-300">2149 Commercial Dr<br/>Vancouver, BC, V5N 4B3</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 shrink-0" />
-                <span className="text-gray-300">(123) 456-7890</span>
+                <span className="text-gray-300">+1-604-216-1060</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 shrink-0" />
-                <span className="text-gray-300">info@harambeethiopian.com</span>
+                <span className="text-gray-300">info@harambe.ca</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-[hsl(44,100%,52%)] mr-3 mt-1 shrink-0" />
                 <div className="text-gray-300">
-                  <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
-                  <p>Saturday & Sunday: 10:00 AM - 11:00 PM</p>
+                  <p>Sun - Thu: 12:00 PM - 10:00 PM</p>
+                  <p>Fri - Sat: 12:00 PM - 11:00 PM</p>
                 </div>
               </li>
             </ul>
