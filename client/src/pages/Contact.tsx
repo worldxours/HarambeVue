@@ -189,7 +189,7 @@ export default function Contact() {
                 <MapPin className="text-[hsl(44,100%,52%)] h-5 w-5 mr-4 mt-1" />
                 <div>
                   <h4 className="font-medium">Address</h4>
-                  <p className="text-[#757575]">123 Green Street, Culinary District<br/>Your City, ST 12345</p>
+                  <p className="text-[#757575]">2149 Commercial Dr<br/>Vancouver, BC, V5N 4B3</p>
                 </div>
               </div>
               
@@ -197,7 +197,7 @@ export default function Contact() {
                 <Phone className="text-[hsl(44,100%,52%)] h-5 w-5 mr-4 mt-1" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-[#757575]">(123) 456-7890</p>
+                  <p className="text-[#757575]">+1-604-216-1060</p>
                 </div>
               </div>
               
@@ -205,7 +205,7 @@ export default function Contact() {
                 <Mail className="text-[hsl(44,100%,52%)] h-5 w-5 mr-4 mt-1" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-[#757575]">info@verdanttable.com</p>
+                  <p className="text-[#757575]">info@harambe.ca</p>
                 </div>
               </div>
               
@@ -214,8 +214,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">Hours</h4>
                   <p className="text-[#757575]">
-                    Monday - Friday: 11:00 AM - 10:00 PM<br/>
-                    Saturday & Sunday: 10:00 AM - 11:00 PM
+                    Sunday - Thursday: 12:00 PM - 10:00 PM<br/>
+                    Friday - Saturday: 12:00 PM - 11:00 PM
                   </p>
                 </div>
               </div>
@@ -224,21 +224,21 @@ export default function Contact() {
             {/* Map */}
             <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden relative">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s123%20Street%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sus!4v1616593073367!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.4179662968974!2d-123.07168948454995!3d49.266456479181495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486715c5b9aed91%3A0x13c11eb9b66ca0e7!2s2149%20Commercial%20Dr%2C%20Vancouver%2C%20BC%20V5N%204B3%2C%20Canada!5e0!3m2!1sen!2sca!4v1684164885884!5m2!1sen!2sca" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen 
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Restaurant location"
+                title="Harambe Ethiopian Restaurant location"
               ></iframe>
               
               {/* Map overlay with restaurant location pin */}
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none">
                 <div className="bg-primary text-white px-3 py-2 rounded-lg shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 inline-block mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  Verdant Table
+                  Harambe Ethiopian Restaurant
                 </div>
               </div>
             </div>

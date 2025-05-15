@@ -13,21 +13,21 @@ interface MenuItem {
 const injera = "https://images.unsplash.com/photo-1642375776039-006fdbcb8aa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
 
 // Soups
-const spinachSoup = "https://images.unsplash.com/photo-1616501268209-edfff098fdd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const peanutSoup = "https://images.unsplash.com/photo-1585167159413-8c8a1ed09af9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const coconutSoup = "https://images.unsplash.com/photo-1638956265408-ad35f2d1139c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+const spinachSoup = "hhttps://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
+const peanutSoup = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
+const coconutSoup = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
 
 // Salads
-const ethSalad = "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+const ethSalad = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
 
 // Appetizers
-const samosa = "https://images.unsplash.com/photo-1664478711535-fd3cc5d1a99a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+const samosa = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
 
 // Vegetarian dishes
 const shiro = "https://images.unsplash.com/photo-1686169766276-949534fa6a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
 const misirWot = "https://images.unsplash.com/photo-1652086326428-84e0ae7dc93a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const gomen = "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const alicha = "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+const gomen = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
+const alicha = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
 
 // Beef dishes
 const kitfo = "https://images.unsplash.com/photo-1600044309908-ef8401d0e1a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
@@ -44,7 +44,7 @@ const yebegTibs = "https://images.unsplash.com/photo-1651448587686-1aad9215eb19?
 const yebegWot = "https://images.unsplash.com/photo-1624300603538-1ac2209eefc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
 
 // Fish dishes
-const fishTibs = "https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+const fishTibs = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
 
 // Combination platters
 const veggiePlatter = "https://images.unsplash.com/photo-1633970376519-79c092a73654?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
