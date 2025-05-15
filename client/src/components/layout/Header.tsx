@@ -36,7 +36,7 @@ export default function Header() {
         <nav className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <img src={harambeLogoPath} alt="Harambe Logo" className="h-10 w-auto" />
-            <span className="font-heading font-bold text-xl md:text-2xl text-primary">Harambe</span>
+            <span className="font-heading font-bold text-xl md:text-2xl text-primary">Harambe Ethiopian Restaurant</span>
           </Link>
           
           {/* Desktop Navigation */}
