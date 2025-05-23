@@ -53,11 +53,7 @@ export default function Header() {
           </div>
           
           {/* Reservation Button - Desktop */}
-           <div className="hidden md:block">
-            <Button asChild variant="destructive" className="rounded-md">
-              <Link href="/contact">Reserve a Table</Link>
-            </Button>
-          </div>
+
           
           {/* Mobile Menu */}
           <div className="md:hidden">

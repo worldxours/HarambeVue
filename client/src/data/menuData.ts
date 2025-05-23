@@ -8,47 +8,35 @@ interface MenuItem {
   popular?: boolean;
 }
 
-// Ethiopian food images - more specific for each dish type
-// Injera (Ethiopian bread)
-const injera = "https://images.unsplash.com/photo-1642375776039-006fdbcb8aa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-
-// Soups
-const spinachSoup = "hhttps://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-const peanutSoup = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-const coconutSoup = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-
-// Salads
-const ethSalad = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-
-// Appetizers
-const samosa = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-
-// Vegetarian dishes
-const shiro = "https://images.unsplash.com/photo-1686169766276-949534fa6a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const misirWot = "https://images.unsplash.com/photo-1652086326428-84e0ae7dc93a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const gomen = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-const alicha = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-
-// Beef dishes
-const kitfo = "https://images.unsplash.com/photo-1600044309908-ef8401d0e1a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const tibs = "https://images.unsplash.com/photo-1585937421612-70a008356c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const gored = "https://images.unsplash.com/photo-1652086326428-84e0ae7dc93a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const alichaWot = "https://images.unsplash.com/photo-1651448587594-9a58dd4be81a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-
-// Chicken dishes
-const doroWot = "https://images.unsplash.com/photo-1651448588073-9661bb72dcbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const doroTibs = "https://images.unsplash.com/photo-1631292784640-2b24be784d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-
-// Lamb dishes
-const yebegTibs = "https://images.unsplash.com/photo-1651448587686-1aad9215eb19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const yebegWot = "https://images.unsplash.com/photo-1624300603538-1ac2209eefc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-
-// Fish dishes
-const fishTibs = "https://imgs.search.brave.com/Y2g_-mnIwXeGDlSz5R5mJcHFE0epYHYAFqhPc7UWSe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2Zvb2QvaWMvZm9v/ZF8xNng5XzE2MDAv/cmVjaXBlcy92ZWdl/dGFibGVfc2Ftb3Nh/c18yNDE3N18xNng5/LmpwZw&auto=format&fit=crop&w=150&q=80";
-
-// Combination platters
-const veggiePlatter = "https://images.unsplash.com/photo-1633970376519-79c092a73654?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
-const mixedPlatter = "https://images.unsplash.com/photo-1643321210461-d60e3c5a0ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80";
+// Import authentic Ethiopian food images from assets
+import muriyevoSoup from "@/assets/Muriyevo Soup.png";
+import harambesalad from "@/assets/Harambe Salad.png";
+import peanutSoup from "@/assets/Peanut Soup.png";
+import dumaskliSoup from "@/assets/Dumaskli Soup.png";
+import sheroWot from "@/assets/Shero Wot.png";
+import misirWot from "@/assets/Misir Wot.png";
+import tekilGomen from "@/assets/Tekil Gomen.png";
+import gomen from "@/assets/Gomen.png";
+import kikAlichaWot from "@/assets/Kik Alicha Wot.png";
+import kitefo from "@/assets/Kitefo.png";
+import kitefoWithVeggies from "@/assets/Kitefo and three Kinds of Vegetable Dishes.png";
+import zilzilTibs from "@/assets/Zilzil Tibs.png";
+import awazeTibs from "@/assets/Awaze Tibs.png";
+import goredGored from "@/assets/Gored Gored.png";
+import alichaWot from "@/assets/Alatcha Wot.png";
+import doroWot from "@/assets/Doro Wot.png";
+import doroTibs from "@/assets/Doro Tibs.png";
+import doroTibsWithVeggies from "@/assets/Doro Tibs with three kinds of veggies.png";
+import yebegTibs from "@/assets/Yebeg Tibs.png";
+import yebegWotWithVeggies from "@/assets/Yebeg Wot with three kinds veggies.png";
+import yeAssaTibs from "@/assets/Ye Assa Tibs.png";
+import yeAssaTibsWithVeggies from "@/assets/Ye Assa Tibs and three Kinds of Vegetable Dishes.png";
+import veggieCombination from "@/assets/Veggie Lovers Combination.png";
+import chefsCombination from "@/assets/Chef's Choice Combination.png";
+import injera from "@/assets/Injera.png";
+import coffee from "@/assets/Coffee.png";
+import tejHoneyWine from "@/assets/Tej Honey Wine.png";
+import addisSpiceTea from "@/assets/Addis Ethiopian Spice Tea.png";
 
 export const menuData = {
   appetizers: [
@@ -57,7 +45,7 @@ export const menuData = {
       name: "Muriyevo Soup",
       price: 8.99,
       description: "Spinach, onions, tomatoes and assorted Harambe spices, made with coconut milk",
-      image: spinachSoup,
+      image: muriyevoSoup,
       dietary: "Vegetarian"
     },
     {
@@ -65,7 +53,7 @@ export const menuData = {
       name: "Harambe Salad",
       price: 8.99,
       description: "Tomatoes, onions, bell peppers, and lettuce with assorted Harambe spices in the dressing.",
-      image: ethSalad,
+      image: harambesalad,
       dietary: "Vegetarian"
     },
     {
@@ -80,15 +68,7 @@ export const menuData = {
       name: "Dumaskli Soup",
       price: 8.99,
       description: "Milk, corn, and assorted Harambe Organic Ethiopian, made with coconut milk.",
-      image: coconutSoup,
-      dietary: "Vegetarian"
-    },
-    {
-      id: 5,
-      name: "Veggie Samosa",
-      price: 2.50,
-      description: "Brown lentils, onions, garlic, salt, and Harambe spices. 1 for $2.50 or 3 for $6.00",
-      image: samosa,
+      image: dumaskliSoup,
       dietary: "Vegetarian"
     }
   ],
@@ -98,12 +78,12 @@ export const menuData = {
       name: "Shero Wot",
       price: 14.99,
       description: "Ground chickpeas cooked in berbere with onions and seasoned with Harambe organic spices.",
-      image: shiro,
+      image: sheroWot,
       dietary: "Vegetarian"
     },
     {
       id: 7,
-      name: "Miser Wot",
+      name: "Misir Wot",
       price: 14.99,
       description: "Red split lentils cooked with onions in berbere and Harambe organic spices.",
       image: misirWot,
@@ -114,7 +94,7 @@ export const menuData = {
       name: "Tekil Gomen",
       price: 14.99,
       description: "Steamed cabbage and onions seasoned with Harambe organic spices.",
-      image: gomen,
+      image: tekilGomen,
       dietary: "Vegetarian"
     },
     {
@@ -130,7 +110,7 @@ export const menuData = {
       name: "Yatekilt Alicha",
       price: 14.99,
       description: "Sauteed carrots, string beans, potatoes, and onions, seasoned with Harambe organic spices.",
-      image: alicha,
+      image: alichaWot,
       dietary: "Vegetarian"
     },
     {
@@ -138,7 +118,7 @@ export const menuData = {
       name: "Kik Alicha Wot",
       price: 13.99,
       description: "Yellow split lentils cooked with onions in berbere and Harambe organic spices.",
-      image: alicha,
+      image: kikAlichaWot,
       dietary: "Vegetarian"
     }
   ],
@@ -148,42 +128,42 @@ export const menuData = {
       name: "Kitefo",
       price: 23.80,
       description: "Lean tender beef finely chopped tartar and mixed with mitmita cardamom and Ethiopian butter. Served raw or slightly cooked with your choice of spinach or Ateb (Ethiopian Cottage Cheese) and choice of injera or rice.",
-      image: kitfo
+      image: kitefo
     },
     {
       id: 13,
       name: "Kitefo and Three Kinds of Vegetable Dishes",
       price: 31.80,
       description: "Lean tender beef finely chopped tartar and mixed with mitmita cardamom and Ethiopian butter. Served raw or slightly cooked with your choice of spinach or Ateb (Ethiopian Cottage Cheese) and choice of injera or rice.",
-      image: kitfo
+      image: kitefoWithVeggies
     },
     {
       id: 14,
       name: "Zilzil Tibs",
       price: 25.99,
       description: "Strips of tender beef sauteed with onions, exotic herbs, and berbere. Served with salad and choice of injera or rice.",
-      image: tibs
+      image: zilzilTibs
     },
     {
       id: 15,
       name: "Awaze Tibs",
       price: 23.80,
       description: "Beef chunks sauteed in butter, seasoned with onions, green peppers, and organic Ethiopian spices, and served with Harambe salad and choice of injera or rice.",
-      image: tibs
+      image: awazeTibs
     },
     {
       id: 16,
       name: "Awaze Tibs and Three Kinds of Vegetable Dishes",
       price: 31.80,
       description: "Awaze tibs with chef's choice of three items from the standard vegetable combination and injera or rice.",
-      image: tibs
+      image: awazeTibs
     },
     {
       id: 17,
       name: "Gored Gored",
       price: 24.99,
       description: "Chucked cubed beef mixed with homemade awaze sauce and herbal butter with your choice of injera or rice.",
-      image: gored
+      image: goredGored
     },
     {
       id: 18,
@@ -227,7 +207,7 @@ export const menuData = {
       name: "Doro Tibs and Three Kinds of Vegetable Dishes",
       price: 32.99,
       description: "Doro tibs with chef's choice of three items from the standard vegetable combination.",
-      image: doroTibs
+      image: doroTibsWithVeggies
     }
   ],
   lamb: [
@@ -250,14 +230,14 @@ export const menuData = {
       name: "Yebeg Wot",
       price: 23.80,
       description: "Lamb simmered in berbere sauce, seasoned with organic Harambe spices, and served with salad.",
-      image: yebegWot
+      image: yebegWotWithVeggies
     },
     {
       id: 27,
       name: "Yebeg Wot with Three Kinds of Vegetable Dishes",
       price: 31.80,
       description: "Yebeg Wot with chef's choice of three items from the standard vegetable combination.",
-      image: yebegWot
+      image: yebegWotWithVeggies
     }
   ],
   combinationPlatters: [
@@ -273,7 +253,7 @@ export const menuData = {
         "Six People": 99.00
       },
       description: "Assorted Harambe vegetarian dishes with Harambe salad.",
-      image: veggiePlatter,
+      image: veggieCombination,
       dietary: "Vegetarian"
     },
     {
@@ -288,7 +268,7 @@ export const menuData = {
         "Six People": 137.99
       },
       description: "Yebeg Wot, Doro Wot, and Alicha Wot with Harambe assorted vegetarian dishes from the menu.",
-      image: mixedPlatter
+      image: chefsCombination
     }
   ],
   fish: [
@@ -297,14 +277,14 @@ export const menuData = {
       name: "Ye Assa Tibs",
       price: 24.99,
       description: "Fish of the day pan fried and delicately seasoned with Ethiopian herbs and spices, served with a side salad and choice of injera or rice.",
-      image: fishTibs
+      image: yeAssaTibs
     },
     {
       id: 31,
       name: "Ye Assa Tibs and Three Kinds of Vegetable Dishes",
       price: 32.99,
       description: "Ye assa tibs with chef's choice of three items from the standard vegetable combination.",
-      image: fishTibs
+      image: yeAssaTibsWithVeggies
     }
   ],
   injera: [
